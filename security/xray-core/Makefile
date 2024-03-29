@@ -1,10 +1,9 @@
 PORTNAME=	xray-core
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.8.8
-PORTREVISION=	1
+DISTVERSION=	1.8.9
 CATEGORIES=	security
-MASTER_SITES=	https://github.com/v2fly/geoip/releases/download/202403070031/:geoip \
-		https://github.com/v2fly/domain-list-community/releases/download/20240301033006/:geosite
+MASTER_SITES=	https://github.com/v2fly/geoip/releases/download/202403280038/:geoip \
+		https://github.com/v2fly/domain-list-community/releases/download/20240324094850/:geosite
 DISTFILES=	geoip.dat:geoip \
 		dlc.dat:geosite
 EXTRACT_ONLY=	v${DISTVERSION}.zip \
