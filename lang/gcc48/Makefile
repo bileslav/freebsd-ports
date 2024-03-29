@@ -35,8 +35,10 @@ CPE_VENDOR=	gnu
 GCC_VERSION=	${PORTVERSION}
 SUFFIX=		${PORTVERSION:C/([0-9]+).([0-9]+).*/\1\2/}
 SSP_UNSAFE=	yes
-CFLAGS:=	${CFLAGS:N-march=haswell:N-march=ivybridge:N-march=westmere:N-mretpoline}
-CXXFLAGS:=	${CXXFLAGS:N-march=haswell:N-march=ivybridge:N-march=westmere:N-mretpoline}
+
+# https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=218819
+CFLAGS:=	${CFLAGS:N-march=znver3:N-mretpoline}
+CXXFLAGS:=	${CXXFLAGS:N-march=znver3:N-mretpoline}
 
 .include <bsd.port.pre.mk>
 
