@@ -1,0 +1,11 @@
+--- gtk/org.gtk.Settings.FileChooser.gschema.xml.orig	2024-01-24 01:14:34 UTC
++++ gtk/org.gtk.Settings.FileChooser.gschema.xml
+@@ -133,7 +133,7 @@ -->
+       </description>
+     </key>
+     <key name='startup-mode' enum='org.gtk.Settings.FileChooser.StartupMode'>
+-      <default>'recent'</default>
++      <default>'cwd'</default>
+       <summary>Startup mode</summary>
+       <description>
+ 	Either "recent" or "cwd"; controls whether the file chooser

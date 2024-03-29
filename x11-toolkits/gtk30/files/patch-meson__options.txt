@@ -1,0 +1,19 @@
+--- meson_options.txt.orig	2024-01-24 01:14:34 UTC
++++ meson_options.txt
+@@ -9,6 +9,8 @@ option('quartz_backend', type: 'boolean', value: true,
+   description : 'Enable the Windows gdk backend (only when building on Windows)')
+ option('quartz_backend', type: 'boolean', value: true,
+   description : 'Enable the macOS gdk backend (only when building on macOS)')
++option('atk_bridge', type: 'boolean', value: true,
++  description : 'Enable Atk bridge')
+ 
+ # Optional dependencies
+ option('xinerama', type: 'combo', choices : ['yes', 'no', 'auto'], value : 'auto',
+@@ -47,3 +49,7 @@ option('builtin_immodules', type: 'string',
+ # input modules
+ option('builtin_immodules', type: 'string',
+        value: '', description: 'Build specified immodules into GTK so/DLL (comma-separated list), "all", "none" or "backend"')
++
++# Recommended dependencies
++option('atk_bridge', type: 'boolean', value: true,
++  description : 'Enable atk-bridge support')

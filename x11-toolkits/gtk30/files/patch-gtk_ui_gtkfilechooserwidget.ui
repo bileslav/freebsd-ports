@@ -1,0 +1,15 @@
+--- gtk/ui/gtkfilechooserwidget.ui.orig	2024-01-24 01:14:34 UTC
++++ gtk/ui/gtkfilechooserwidget.ui
+@@ -15,8 +15,10 @@
+               <object class="GtkPlacesSidebar" id="places_sidebar">
+                 <property name="visible">1</property>
+                 <property name="hscrollbar-policy">never</property>
+-                <property name="local-only">1</property>
+-                <property name="show-other-locations">1</property>
++                <property name="show-other-locations">0</property>
++                <property name="show-trash">0</property>
++                <property name="show-recent">0</property>
++                <property name="show-desktop">0</property>
+                 <child internal-child="accessible">
+                   <object class="AtkObject">
+                     <property name="AtkObject::accessible-name" translatable="yes">Places</property>
