@@ -34,7 +34,6 @@ lib/libdbus-1.so
 lib/libdbus-1.so.3
 lib/libdbus-1.so.%%LIBVERSION%%
 libdata/pkgconfig/dbus-1.pc
-@(,%%GROUPS%%,4750) libexec/dbus-daemon-launch-helper
 %%MANPAGES%%share/man/man1/dbus-cleanup-sockets.1.gz
 %%MANPAGES%%share/man/man1/dbus-daemon.1.gz
 %%MANPAGES%%share/man/man1/dbus-launch.1.gz
