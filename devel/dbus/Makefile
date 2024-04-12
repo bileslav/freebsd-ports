@@ -1,6 +1,6 @@
 PORTNAME=	dbus
 DISTVERSION=	1.14.10
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	https://dbus.freedesktop.org/releases/dbus/
@@ -26,6 +26,7 @@ CONFIGURE_ARGS=	--disable-apparmor \
 		--disable-doxygen-docs \
 		--disable-selinux \
 		--disable-systemd \
+		--disable-traditional-activation \
 		--with-session-socket-dir=/tmp \
 		--with-test-socket-dir=${WRKDIR}
 CONFIGURE_ENV=	have_ld_version_script=yes
